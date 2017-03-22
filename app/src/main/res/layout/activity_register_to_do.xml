@@ -40,7 +40,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:progressTint="@color/azulpadrao" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/DataEntrega"
+                android:textColor="@color/preto"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/tag"
+                android:textColor="@color/preto"/>
 
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <EditText
+               android:id="@+id/dataEntrega"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.AppCompat.EditText"
+               android:layout_weight="2"/>
+           <EditText
+               android:id="@+id/tag"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="2"/>
+       </LinearLayout>
 
 
 
