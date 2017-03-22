@@ -10,4 +10,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.bspicinini.todoproject.RegisterToDoActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/preto"
+            android:text="@string/descricao"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descricao"
+            android:inputType="text"
+            android:backgroundTint="@color/azulpadrao"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/preto"
+            android:text="@string/Importancia"/>
+
+        <RatingBar
+            android:id="@+id/importancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/azulpadrao" />
+
+
+
+
+    </LinearLayout>
+
+
 </RelativeLayout>
+
