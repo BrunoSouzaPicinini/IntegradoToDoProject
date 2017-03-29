@@ -13,8 +13,9 @@
     tools:context="br.com.bspicinini.todoproject.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="text"
+        android:id="@+id/edtLogin"/>
 </RelativeLayout>

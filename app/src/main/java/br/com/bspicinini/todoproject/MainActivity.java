@@ -9,9 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    public EditText edtLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,13 +20,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        edtLogin = (EditText) findViewById(R.id.edtLogin);
     }
 
     public void gotoAddToDo(View v){
     //    Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
     //          .setAction("Action", null).show();
-        startActivity(new Intent(this, RegisterToDoActivity.class));
+        Intent i = new Intent(this, RegisterToDoActivity.class);
+        i.putExtra("Login",edtLogin.getText().toString());
+        startActivity(i);
 
     }
 
